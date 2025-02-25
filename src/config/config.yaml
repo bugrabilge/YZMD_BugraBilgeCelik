@@ -1,0 +1,26 @@
+model_name: "bert-base-uncased"
+num_labels: 4
+
+output_dir: "./results"
+logging_dir: "./logs"
+evaluation_strategy: "epoch"
+save_strategy: "epoch"
+save_total_limit: 2
+learning_rate: 2e-5
+train_batch_size: 16
+eval_batch_size: 16
+num_train_epochs: 3
+weight_decay: 0.01
+fp16: false
+bf16: true
+load_best_model_at_end: true
+metric_for_best_model: "eval_accuracy"
+greater_is_better: true
+warmup_ratio: 0.06
+gradient_accumulation_steps: 2
+
+# **Veri Seti Bölme Oranları**
+train_split: 0.80
+test_split: 0.20
+
+model_save_path: "./models/model.py"

@@ -1,0 +1,30 @@
+# Python 3.8+ uyumluluğunu sağlamak için
+python>=3.8
+
+# PyTorch (CUDA 11.0+ destekli sürüm)
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+nvidia-pyindex  # CUDA destekli PyTorch için
+
+# NLP Kütüphaneleri
+transformers>=4.30.0
+datasets>=2.14.0
+evaluate>=0.4.0
+nltk>=3.8
+spacy>=3.6.0
+sentencepiece>=0.1.99  # Tokenizer için gerekli
+tqdm>=4.65.0  # Veri işleme sırasında ilerleme çubuğu desteği
+
+# Ekstra Kütüphaneler
+scikit-learn>=1.2.2  # Makine öğrenmesi değerlendirme metrikleri için
+pandas>=1.5.3  # Veri işleme için
+gradio>=3.50.2  # Web arayüzü için
+flask>=2.3.0  # Alternatif API desteği için
+uvicorn>=0.21.0  # Flask/FastAPI server için
+
+# Minimum Donanım Gereksinimleri
+# CUDA	11.0+
+# RAM	16GB+
+# GPU	8GB+ VRAM
+# Disk	10GB+ boş alan
